@@ -15,24 +15,17 @@
   />
 </head>
 <body>
-  <!-- Top Bar (hidden on scroll) -->
+  <!-- Top Bar -->
   <div class="top-bar" id="home">
     <div class="site-row">
       <div class="left-content">
-        <p>
-          <span><i class="far fa-envelope-open"></i></span>
-          alonacortes@gmail.com
-        </p>
-        <p>
-          <span><i class="fas fa-phone-alt"></i></span>
-          445-444-1266
-        </p>
+        <p><span><i class="far fa-envelope-open"></i></span> alonacortes@gmail.com</p>
+        <p><span><i class="fas fa-phone-alt"></i></span> 445-444-1266</p>
       </div>
-      <!-- Optionally add social links here in .right-content -->
     </div>
   </div>
 
-  <!-- Main Header (desktop nav) -->
+  <!-- Main Header -->
   <div class="site-row">
     <header>
       <div class="left-nav">
@@ -54,13 +47,11 @@
     </header>
   </div>
 
-  <!-- Secondary Header (mobile nav) -->
+  <!-- Mobile Nav -->
   <div class="secondary-header">
     <div class="inner-row">
-      <div class="logo">
-        <div class="logo-inner">
-          <img src="favicon.png" alt="Pillars icon" />
-        </div>
+      <div class="logo-inner">
+        <img src="favicon.png" alt="Pillars icon" />
       </div>
       <nav>
         <ul class="main-nav">
@@ -71,64 +62,67 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
+      <div class="navTrigger"><i></i><i></i><i></i></div>
     </div>
   </div>
 
-  <!-- Landing Section -->
+  <!-- Hero Section -->
   <section id="landing">
     <div class="slide-container">
       <div
         class="landing-slide fade"
-        style="
-          background: linear-gradient(
-              to bottom,
-              rgba(0, 0, 0, 0.22),
-              rgba(0, 0, 0, 0.5)
-            ),
-            url('images/landing.jpg') no-repeat;
-        "
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('images/hero-1920x1080.jpg') center/cover no-repeat;"
       >
         <div class="slide-inner">
           <h1>Homeschool Evaluations Made Simple</h1>
-          <p>
-            Guiding Pennsylvania families through every step of the homeschool
-            evaluation process
-          </p>
+          <p>Guiding Pennsylvania families through every step of the homeschool evaluation process</p>
           <div class="btn-section">
-            <a
-              href="https://your-google-booking-link.com"
-              class="btn"
-              target="_blank"
-              >Book Your Evaluation</a
-            >
+            <a href="evaluations.html" class="btn">Learn About Evaluations</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- About Us -->
+  <section id="about-us" class="site-row content">
+    <img src="images/about-1200x600.jpg" alt="Teacher and parent planning homeschooling" width="1200" height="600" />
+    <h2>About Pillars of Peace Primary Partners</h2>
+    <p>A homeschool hybrid to help parents meet homeschool legal requirements. A place where teachers and parents witness together to raise a child up in the way he should go.</p>
+    <p>Parents and kids need and deserve a high quality, flexible, applicable education without interference from government mandates and social agendas. Our aim is to create such an option by focusing on helping parents meet legal homeschooling requirements in an efficient, semi-structured, yet flexible environment.</p>
+    <div class="btn-section">
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="site-row content">
+    <h2>Our Mission</h2>
+    <p>We guide children and parents through the homeschooling process from how to register through end-of-year evaluations and everything in between. We provide certified teachers with proven curriculums and strategies that work, especially for children who have fallen through the cracks of traditional schooling.</p>
+    <div class="btn-section">
+      <a href="contact.html" class="btn">Join Our Community</a>
+    </div>
+  </section>
+
+  <!-- About Alona -->
+  <section id="about-alona" class="site-row content">
+    <img src="images/alona-400x400.jpg" alt="Alona Hirsh portrait" width="400" height="400" />
+    <h2>About Alona Hirsh</h2>
+    <p>Hello! I’m Alona Hirsh, a mother of three and a certified elementary teacher with a Master’s in Special Education. I have homeschooled since 2016 and taught students of all ages since 2013.</p>
+    <p>I founded Pillars of Peace Primary Partners after hearing from parents overwhelmed by homeschool requirements and concerned about political agendas in curricula. I believe in a peaceful, encouraging environment where parents partner with teachers to support their child’s learning journey.</p>
+    <div class="btn-section">
+      <a href="contact.html" class="btn">Schedule a Call</a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <div class="inner-row">
-      <div class="footer-content">
-        <p>
-          © 2025 Pillars of Peace Primary Partners. All rights reserved.
-        </p>
-      </div>
+    <div class="site-row">
+      <p>© 2025 Pillars of Peace Primary Partners. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
-  ></script>
   <script src="js/main.js"></script>
 </body>
 </html>
