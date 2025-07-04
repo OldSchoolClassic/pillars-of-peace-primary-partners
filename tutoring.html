@@ -13,8 +13,8 @@
   <div class="top-bar" id="tutoring">
     <div class="site-row">
       <div class="left-content">
-        <p><span><i class="far fa-envelope-open"></i></span> alonacortes@gmail.com</p>
-        <p><span><i class="fas fa-phone-alt"></i></span> 445-444-1266</p>
+        <p><i class="far fa-envelope-open"></i> alonacortes@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> 445-444-1266</p>
       </div>
     </div>
   </div>
@@ -23,96 +23,78 @@
   <div class="site-row">
     <header>
       <div class="left-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="evaluations.html">Evaluations</a></li>
-          <li class="current"><a href="tutoring.html">Tutoring</a></li>
-        </ul>
+        <ul><li><a href="index.html">Home</a></li><li><a href="evaluations.html">Evaluations</a></li><li class="current"><a href="tutoring.html">Tutoring</a></li></ul>
       </div>
-      <div class="logo">
-        <img src="images/favicon.png" alt="Pillars logo" />
-      </div>
+      <div class="logo"><img src="images/logo.png" alt="Logo"></div>
       <div class="right-nav">
-        <ul>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <ul><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul>
       </div>
     </header>
   </div>
 
-  <!-- Secondary Header -->
-  <div class="secondary-header">
-    <div class="inner-row">
-      <div class="logo-inner">
-        <img src="favicon.png" alt="Logo icon" />
-      </div>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="evaluations.html">Evaluations</a></li>
-          <li class="current"><a href="tutoring.html">Tutoring</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="navTrigger"><i></i><i></i><i></i></div>
+  <!-- Hero Banner -->
+  <section style="background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url('images/hero-tutoring-1920x600.jpg') center/cover no-repeat; height:50vh; display:flex; align-items:center; justify-content:center;">
+    <div style="text-align:center; color:white;">
+      <h1>Expert Tutoring Services</h1>
+      <p>Personalized support for every learner, one-on-one and small groups</p>
+      <a href="contact.html" class="btn">Schedule a Session</a>
     </div>
-  </div>
+  </section>
 
-  <!-- Main Content -->
-  <main class="site-row content">
-    <h1>Personalized Tutoring Services</h1>
-    <p>We offer expert academic support tailored to your child’s needs, whether one-on-one or in a small group setting.</p>
-
-    <section>
+  <!-- One-on-One Section -->
+  <section style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; padding:3rem 1rem;">
+    <img src="images/oneonone-600x400.jpg" alt="One-on-one tutoring" style="flex:1 1 300px; max-width:500px; border-radius:0.5rem;">
+    <div style="flex:2 1 400px; text-align:left;">
       <h2>One-on-One Tutoring</h2>
-      <p>Our individualized tutoring sessions provide focused attention on your child’s strengths and challenges. Perfect for deep diving into specific topics, reinforcing classroom learning, and building confidence.</p>
-      <p><strong>Rate:</strong> $40 per hour</p>
-    </section>
-
-    <section>
-      <h2>Small Group Tutoring</h2>
-      <p>Group sessions foster collaborative learning among 2 to 5 students. Each learner receives personalized support within an interactive environment, making lessons engaging and affordable.</p>
-      <p><strong>Rate:</strong> $20 per hour per student (2–5 students)</p>
-    </section>
-
-    <section>
-      <h2>Subjects Covered</h2>
-      <ul>
-        <li>Reading, Writing & Spelling</li>
-        <li>Mathematics (Arithmetic, Algebra, Geometry)</li>
-        <li>Science & Humanities</li>
-        <li>Study Skills & Organization</li>
-        <li>Test Prep & Assessment Review</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Benefits of Tutoring</h2>
-      <ul>
-        <li>Customized lesson plans to match learning pace</li>
-        <li>Stronger foundational skills and concept mastery</li>
-        <li>Improved academic confidence and motivation</li>
-        <li>Flexible scheduling to fit your family’s needs</li>
-        <li>Progress tracking and parent feedback</li>
-      </ul>
-    </section>
-
-    <div class="btn-section">
-      <a href="https://your-google-booking-link.com" class="btn" target="_blank">Schedule Tutoring</a>
+      <p>Focused, individualized sessions identify gaps, reinforce concepts, and build confidence.</p>
+      <p><strong>Rate:</strong> $40/hr</p>
+      <a href="contact.html" class="btn">Book One-on-One</a>
     </div>
-  </main>
+  </section>
+
+  <!-- Small Group Section -->
+  <section style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; padding:3rem 1rem; background:#f9f8fd;">
+    <div style="flex:2 1 400px; text-align:right;">
+      <h2>Small Group Tutoring</h2>
+      <p>Collaborative sessions for 2–5 students, promoting peer learning and affordability.</p>
+      <p><strong>Rate:</strong> $20/hr per student</p>
+      <a href="contact.html" class="btn">Join a Group</a>
+    </div>
+    <img src="images/group-600x400.jpg" alt="Small group tutoring" style="flex:1 1 300px; max-width:500px; border-radius:0.5rem;">
+  </section>
+
+  <!-- Subjects Covered Grid -->
+  <section style="text-align:center; padding:3rem 1rem;">
+    <h2>Subjects Covered</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem; max-width:900px; margin:2rem auto;">
+      <div style="padding:1rem; border-radius:0.5rem; background:white;"><img src="images/subjects-reading-100x100.png" alt="Reading icon"><h3>Reading & Writing</h3></div>
+      <div style="padding:1rem; border-radius:0.5rem; background:white;"><img src="images/subjects-math-100x100.png" alt="Math icon"><h3>Mathematics</h3></div>
+      <div style="padding:1rem; border-radius:0.5rem; background:white;"><img src="images/subjects-science-100x100.png" alt="Science icon"><h3>Science & Humanities</h3></div>
+      <div style="padding:1rem; border-radius:0.5rem; background:white;"><img src="images/subjects-study-100x100.png" alt="Study skills icon"><h3>Study Skills</h3></div>
+      <div style="padding:1rem; border-radius:0.5rem; background:white;"><img src="images/subjects-test-100x100.png" alt="Test prep icon"><h3>Test Prep</h3></div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; padding:3rem 1rem; background:#fff; text-align:center;">
+    <div><img src="images/benefit-customized-100x100.png" alt="Customized plans"><h3>Customized Plans</h3></div>
+    <div><img src="images/benefit-confidence-100x100.png" alt="Confidence icon"><h3>Boosted Confidence</h3></div>
+    <div><img src="images/benefit-flexible-100x100.png" alt="Flexible scheduling"><h3>Flexible Scheduling</h3></div>
+    <div><img src="images/benefit-feedback-100x100.png" alt="Progress feedback"><h3>Progress Tracking</h3></div>
+  </section>
+
+  <!-- Final CTA Banner -->
+  <section style="text-align:center; padding:3rem 1rem; background:var(--accent-color); color:white;">
+    <h2>Ready to Elevate Your Child’s Learning?</h2>
+    <p>Contact us today to design a tutoring plan that fits your family.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="site-row">
-      <p>© 2025 Pillars of Peace Primary Partners. All rights reserved.</p>
-    </div>
+  <footer style="background:#fff; padding:1rem 0; text-align:center;">
+    <div class="site-row"><p>© 2025 Pillars of Peace Primary Partners. All rights reserved.</p></div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
