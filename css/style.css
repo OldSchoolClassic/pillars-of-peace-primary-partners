@@ -213,6 +213,19 @@ header {
   margin-bottom: 1rem;
 }
 
+.contact-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Footer */
 footer {
   background: var(--bg-light);
