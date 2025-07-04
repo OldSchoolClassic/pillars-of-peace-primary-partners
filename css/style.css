@@ -74,7 +74,7 @@ header .left-nav a,
 header .right-nav a,
 header .main-nav a {
   text-decoration: none;
-  color: white;
+  color: #004aad;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
