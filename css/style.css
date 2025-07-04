@@ -226,6 +226,17 @@ header {
   }
 }
 
+/* -------------------------------------------------- */
+/* Contact Page Icons                                 */
+/* -------------------------------------------------- */
+.contact-cards img,
+.contact-method img {
+  max-width: 120px;       /* or whatever width you like */
+  height: auto;           /* preserves aspect ratio */
+  display: block;
+  margin: 0 auto 1rem;    /* centers & gives breathing room */
+}
+
 /* Footer */
 footer {
   background: var(--bg-light);
