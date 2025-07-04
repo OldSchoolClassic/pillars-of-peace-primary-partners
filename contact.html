@@ -13,8 +13,8 @@
   <div class="top-bar" id="contact">
     <div class="site-row">
       <div class="left-content">
-        <p><span><i class="far fa-envelope-open"></i></span> alonacortes@gmail.com</p>
-        <p><span><i class="fas fa-phone-alt"></i></span> 445-444-1266</p>
+        <p><i class="far fa-envelope-open"></i> alonacortes@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> 445-444-1266</p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
         </ul>
       </div>
       <div class="logo">
-        <img src="images/favicon.png" alt="Pillars logo" />
+        <img src="images/logo.png" alt="Pillars logo" />
       </div>
       <div class="right-nav">
         <ul>
@@ -41,7 +41,7 @@
     </header>
   </div>
 
-  <!-- Secondary Header -->
+  <!-- Secondary Header (mobile nav) -->
   <div class="secondary-header">
     <div class="inner-row">
       <div class="logo-inner">
@@ -60,37 +60,93 @@
     </div>
   </div>
 
-  <!-- Main Content: Contact Info -->
+  <!-- Hero Section -->
+  <section id="hero-contact" style="
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+      url('images/hero-contact-1920x500.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">
+    <div style="text-align: center; color: white; max-width: 800px; padding: 0 1rem;">
+      <h1>We’re Here to Help You</h1>
+      <p>Whether you’ve got questions about evaluations, tutoring, or resources, drop us a line below or schedule a slot instantly.</p>
+      <a href="evaluations.html" class="btn">Learn About Evaluations</a>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
   <main class="site-row content">
-    <h1>Get in Touch</h1>
-    <p>We’d love to help you with your homeschool evaluation or tutoring needs. Reach out via email, phone, or schedule directly below.</p>
+    <h1 style="text-align: center; margin-top: 2rem;">Get in Touch</h1>
+    <p style="text-align: center; max-width: 800px; margin: 0.5rem auto 2rem;">
+      Choose the method that works for you—email, phone, form, or direct booking. We’ll be in touch right away.
+    </p>
 
-    <!-- Booking Link -->
-    <section class="contact-method">
-      <h2>Schedule Online</h2>
-      <p>Use our online booking tool to select a convenient time slot.</p>
-      <a href="https://your-google-booking-link.com" class="btn" target="_blank">Book Now</a>
-    </section>
+    <div style="
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-bottom: 3rem;
+    ">
+      <!-- Booking Card -->
+      <div class="card">
+        <img src="images/icon-calendar.png" alt="Calendar icon" />
+        <h3>Schedule Online</h3>
+        <p>Pick a time that fits your schedule with our booking tool.</p>
+        <a href="https://your-google-booking-link.com" class="btn" target="_blank">Book Now</a>
+      </div>
 
-    <!-- Email -->
-    <section class="contact-method">
-      <h2>Email Us</h2>
-      <p>Send questions or paperwork to:</p>
-      <p><a href="mailto:alonacortes@gmail.com">alonacortes@gmail.com</a></p>
-    </section>
+      <!-- Email Card -->
+      <div class="card">
+        <img src="images/icon-email.png" alt="Email icon" />
+        <h3>Email Us</h3>
+        <p>Send your questions or documents here.</p>
+        <a href="mailto:alonacortes@gmail.com" class="btn">Send Email</a>
+      </div>
 
-    <!-- Phone -->
-    <section class="contact-method">
-      <h2>Call or Text</h2>
-      <p>Reach us directly at:</p>
-      <p><a href="tel:+14454441266">445-444-1266</a></p>
-    </section>
+      <!-- Phone Card -->
+      <div class="card">
+        <img src="images/icon-phone.png" alt="Phone icon" />
+        <h3>Call or Text</h3>
+        <p>We’re available weekdays 9 AM–5 PM.</p>
+        <a href="tel:+14454441266" class="btn">Call Now</a>
+      </div>
 
-    <!-- Mailing Address -->
-    <section class="contact-method">
-      <h2>Mailing Address</h2>
-      <p>If you need to mail documents or forms:</p>
-      <address>123 Anywhere St.<br />Any City, PA 12345</address>
+      <!-- Address Card -->
+      <div class="card">
+        <img src="images/icon-location.png" alt="Location icon" />
+        <h3>Mailing Address</h3>
+        <p>123 Anywhere St.<br />Any City, PA 12345</p>
+        <a href="https://maps.google.com/?q=123+Anywhere+St,+Any+City+PA" class="btn" target="_blank">View Map</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section style="
+      background: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    ">
+      <h2 style="text-align: center; margin-bottom: 1rem;">Quick Message</h2>
+      <form action="#" method="POST" style="display: grid; gap: 1rem;">
+        <div style="display: flex; flex-direction: column;">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;" />
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;" />
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;"></textarea>
+        </div>
+        <button type="submit" class="btn" style="justify-self: center; padding:0.75rem 2rem;">Send Message</button>
+      </form>
     </section>
   </main>
 
@@ -101,7 +157,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
