@@ -44,6 +44,11 @@ body {
   margin-right: 0.25rem;
 }
 
+#evaluations-hero h1,
+#evaluations-hero p {
+  color: white;
+}
+
 header {
   display: flex;
   align-items: center;
