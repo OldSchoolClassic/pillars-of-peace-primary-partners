@@ -7,6 +7,12 @@
   <title>Contact — Pillars of Peace Primary Partners</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
   <!-- Top Bar -->
@@ -19,7 +25,7 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Desktop Header -->
   <div class="site-row">
     <header>
       <div class="left-nav">
@@ -41,11 +47,11 @@
     </header>
   </div>
 
-  <!-- Secondary Header (mobile nav) -->
+  <!-- Mobile Header -->
   <div class="secondary-header">
     <div class="inner-row">
       <div class="logo-inner">
-        <img src="favicon.png" alt="Logo icon" />
+        <img src="favicon.png" alt="Pillars icon" />
       </div>
       <nav>
         <ul class="main-nav">
@@ -71,49 +77,44 @@
   ">
     <div style="text-align: center; color: white; max-width: 800px; padding: 0 1rem;">
       <h1>We’re Here to Help You</h1>
-      <p>Whether you’ve got questions about evaluations, tutoring, or resources, drop us a line below or schedule a slot instantly.</p>
+      <p>Questions about evaluations, tutoring, or resources? Reach out below or schedule a time instantly.</p>
       <a href="evaluations.html" class="btn">Learn About Evaluations</a>
     </div>
   </section>
 
-  <!-- Contact Grid -->
+  <!-- Contact Cards Grid -->
   <main class="site-row content">
-    <h1 style="text-align: center; margin-top: 2rem;">Get in Touch</h1>
-    <p style="text-align: center; max-width: 800px; margin: 0.5rem auto 2rem;">
-      Choose the method that works for you—email, phone, form, or direct booking. We’ll be in touch right away.
+    <h1 style="text-align:center; margin-top:2rem;">Get in Touch</h1>
+    <p style="text-align:center; max-width:800px; margin:0.5rem auto 2rem;">
+      Pick the method that works best—online booking, email, phone, or mail.
     </p>
 
-    <div style="
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      margin-bottom: 3rem;
-    ">
-      <!-- Booking Card -->
+    <div class="contact-cards">
+      <!-- Book Online -->
       <div class="card">
         <img src="images/icon-calendar.png" alt="Calendar icon" />
         <h3>Schedule Online</h3>
-        <p>Pick a time that fits your schedule with our booking tool.</p>
+        <p>Choose a time that fits your schedule with our booking tool.</p>
         <a href="https://your-google-booking-link.com" class="btn" target="_blank">Book Now</a>
       </div>
 
-      <!-- Email Card -->
+      <!-- Email -->
       <div class="card">
         <img src="images/icon-email.png" alt="Email icon" />
         <h3>Email Us</h3>
-        <p>Send your questions or documents here.</p>
+        <p>Send questions or documents to:</p>
         <a href="mailto:alonacortes@gmail.com" class="btn">Send Email</a>
       </div>
 
-      <!-- Phone Card -->
+      <!-- Phone -->
       <div class="card">
         <img src="images/icon-phone.png" alt="Phone icon" />
         <h3>Call or Text</h3>
-        <p>We’re available weekdays 9 AM–5 PM.</p>
+        <p>Available weekdays, 9 AM–5 PM.</p>
         <a href="tel:+14454441266" class="btn">Call Now</a>
       </div>
 
-      <!-- Address Card -->
+      <!-- Address -->
       <div class="card">
         <img src="images/icon-location.png" alt="Location icon" />
         <h3>Mailing Address</h3>
@@ -122,30 +123,34 @@
       </div>
     </div>
 
-    <!-- Contact Form -->
+    <!-- Quick Message Form -->
     <section style="
       background: white;
-      padding: 2rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      max-width: 700px;
-      margin: 0 auto 3rem;
+      padding:2rem;
+      border-radius:0.5rem;
+      box-shadow:0 2px 4px rgba(0,0,0,0.1);
+      max-width:700px;
+      margin:0 auto 3rem;
     ">
-      <h2 style="text-align: center; margin-bottom: 1rem;">Quick Message</h2>
-      <form action="#" method="POST" style="display: grid; gap: 1rem;">
-        <div style="display: flex; flex-direction: column;">
+      <h2 style="text-align:center; margin-bottom:1rem;">Quick Message</h2>
+      <form action="#" method="POST" style="display:grid; gap:1rem;">
+        <div style="display:flex; flex-direction:column;">
           <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;" />
+          <input type="text" id="name" name="name" required
+                 style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;">
         </div>
-        <div style="display: flex; flex-direction: column;">
+        <div style="display:flex; flex-direction:column;">
           <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;" />
+          <input type="email" id="email" name="email" required
+                 style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;">
         </div>
-        <div style="display: flex; flex-direction: column;">
+        <div style="display:flex; flex-direction:column;">
           <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="5" required style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;"></textarea>
+          <textarea id="message" name="message" rows="5" required
+                    style="padding:0.5rem; border:1px solid #ccc; border-radius:0.25rem;"></textarea>
         </div>
-        <button type="submit" class="btn" style="justify-self: center; padding:0.75rem 2rem;">Send Message</button>
+        <button type="submit" class="btn"
+                style="justify-self:center; padding:0.75rem 2rem;">Send Message</button>
       </form>
     </section>
   </main>
