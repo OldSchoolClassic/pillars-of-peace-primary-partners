@@ -76,7 +76,8 @@ header {
   color: white;
 }
 .logo img {
-  height: 50px;
+  width: 150px;    /* pick a width that fills the space nicely */
+  height: auto;
 }
 
 .secondary-header {
