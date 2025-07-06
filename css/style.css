@@ -342,3 +342,24 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Homeschool-evaluation stamp */
+.eval-watermark{
+  position:fixed;              /* always visible, even on scroll      */
+  bottom:2rem;                 /* move if you prefer another corner   */
+  right:2rem;
+  width:180px;                 /* scale as needed                     */
+  opacity:.18;                 /* soft watermark look                 */
+  pointer-events:none;         /* never “blocks” clicks               */
+  z-index:0;                   /* below all normal content            */
+}
+@media print{                 /* keeps it on exported PDFs            */
+  .eval-watermark{
+    position:fixed;
+    bottom:1.5cm;
+    right:1.5cm;
+    opacity:.25;
+    z-index:999;
+  }
+}
+
