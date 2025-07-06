@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Evaluations — Pillars of Peace Primary Partners</title>
 
+  <!-- styles / icons -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
-  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -19,7 +18,7 @@
 </head>
 <body>
 
-  <!-- ▸ TOP BAR -------------------------------------------------------- -->
+  <!-- ▸ TOP BAR -->
   <div class="top-bar" id="evaluations">
     <div class="site-row">
       <p><i class="far fa-envelope-open"></i><a href="mailto:alonacortes@gmail.com">alonacortes@gmail.com</a></p>
@@ -27,10 +26,10 @@
     </div>
   </div>
 
-  <!-- ▸ DESKTOP HEADER ------------------------------------------------- -->
+  <!-- ▸ DESKTOP HEADER -->
   <div class="site-row">
     <header>
-      <nav class="nav-left">
+      <nav class="left-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="current"><a href="evaluations.html">Evaluations</a></li>
@@ -38,9 +37,9 @@
         </ul>
       </nav>
 
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Pillars of Peace logo"></a>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Pillars of Peace logo" /></a>
 
-      <nav class="nav-right">
+      <nav class="right-nav">
         <ul>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -49,7 +48,7 @@
     </header>
   </div>
 
-  <!-- ▸ MOBILE HEADER -------------------------------------------------- -->
+  <!-- ▸ MOBILE HEADER -->
   <div class="secondary-header">
     <div class="inner-row">
       <a href="index.html" class="logo-inner"><img src="favicon.png" alt="Pillars icon" /></a>
@@ -68,40 +67,47 @@
     </div>
   </div>
 
-  <!-- ▸ HERO ----------------------------------------------------------- -->
-  <section class="hero hero--evaluations">
-    <div class="hero__inner">
-      <h1>Prepare for Your Homeschool Evaluation</h1>
-      <p>Everything you need to ensure a smooth, compliant process in Pennsylvania</p>
-      <a href="https://calendar.app.google/72u4yEDH2w2hnZXN7" class="btn" target="_blank" rel="noopener">Book Your Evaluation</a>
+  <!-- ▸ HERO -->
+  <section style="padding:0;">
+    <div style="
+      background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(0,0,0,.6)),
+                 url('images/hero-evaluations-1920x600.jpg') center/cover no-repeat;
+      height:50vh;display:flex;align-items:center;justify-content:center">
+      <div style="text-align:center;color:#fff">
+        <h1>Prepare for Your Homeschool Evaluation</h1>
+        <p>Everything you need to ensure a smooth, compliant process in Pennsylvania</p>
+        <a href="https://calendar.app.google/72u4yEDH2w2hnZXN7" class="btn" target="_blank" rel="noopener">Book Your Evaluation</a>
+      </div>
     </div>
   </section>
 
-  <!-- ▸ MAIN CONTENT --------------------------------------------------- -->
-  <main class="site-row">
+  <!-- ▸ MAIN CONTENT -->
+  <main class="site-row content">
 
-    <!-- SECTION: Portfolio Samples -->
-    <section class="split">
-      <figure><img src="images/portfolio-samples-600x400.jpg" alt="Portfolio samples"></figure>
-      <div class="split__content">
-        <h2>Portfolio&nbsp;Samples</h2>
-        <p>Include two or three samples for every subject (beginning, middle and end of year). Worksheets, artwork, reports, tests, projects—anything that shows growth.</p>
+    <!-- Portfolio Samples -->
+    <section style="display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:3rem">
+      <img src="images/portfolio-samples-600x400.jpg" alt="Portfolio samples"
+           style="flex:1 1 320px;max-width:420px;border-radius:.5rem">
+      <div style="flex:1 1 320px;min-width:280px">
+        <h2 style="text-align:center">Portfolio Samples</h2>
+        <p>Include two or three samples per subject—beginning, middle and end of year. Worksheets, artwork, projects, tests—anything that shows growth.</p>
       </div>
     </section>
 
-    <!-- SECTION: Partial Year -->
-    <section class="split split--reverse">
-      <figure><img src="images/partial-year-600x400.jpg" alt="Partial year samples"></figure>
-      <div class="split__content">
-        <h2>Partial&nbsp;Year Samples</h2>
-        <p>Switching to homeschool mid-year? Add early work from the original school to establish a clear baseline and highlight progress.</p>
+    <!-- Partial Year -->
+    <section style="display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:3rem">
+      <div style="flex:1 1 320px;min-width:280px">
+        <h2 style="text-align:center">Partial&nbsp;Year Samples</h2>
+        <p>If you began homeschooling mid-year, add early work from the previous school to establish a baseline and highlight progress.</p>
       </div>
+      <img src="images/partial-year-600x400.jpg" alt="Partial year samples"
+           style="flex:1 1 320px;max-width:420px;border-radius:.5rem">
     </section>
 
-    <!-- SECTION: Required Subjects -->
-    <section class="centered">
-      <h2>Required&nbsp;Subjects</h2>
-      <div class="grid-two">
+    <!-- Required Subjects -->
+    <section style="text-align:center;margin-bottom:3rem">
+      <h2>Required Subjects</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;max-width:900px;margin:0 auto">
         <div>
           <h3>Elementary (1-6)</h3>
           <ul>
@@ -118,7 +124,7 @@
           <ul>
             <li>English – literature, composition</li>
             <li>Science – biology, chemistry</li>
-            <li>Math – algebra, geometry (trig+)</li>
+            <li>Math – algebra, geometry, trig</li>
             <li>Social Studies &amp; Economics</li>
             <li>PE • Music • Art</li>
             <li>Foreign Language (recommended)</li>
@@ -127,66 +133,72 @@
       </div>
     </section>
 
-    <!-- SECTION: Reading Log -->
-    <section class="split">
-      <figure><img src="images/reading-log-600x400.jpg" alt="Reading log"></figure>
-      <div class="split__content">
-        <h2>Reading&nbsp;Log</h2>
-        <p>Track books read or heard. Younger learners typically log 30+ titles; older students record longer works or series.</p>
+    <!-- Reading Log -->
+    <section style="display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:3rem">
+      <img src="images/reading-log-600x400.jpg" alt="Reading log"
+           style="flex:1 1 320px;max-width:420px;border-radius:.5rem">
+      <div style="flex:1 1 320px;min-width:280px">
+        <h2 style="text-align:center">Reading Log</h2>
+        <p>Track every book read or heard. Younger students typically list 30+ titles; older readers record longer works or series.</p>
       </div>
     </section>
 
-    <!-- SECTION: Standardized Assessments -->
-    <section class="split split--reverse">
-      <figure><img src="images/assessment-600x400.jpg" alt="Standardized testing"></figure>
-      <div class="split__content">
-        <h2>Standardized&nbsp;Assessments</h2>
-        <p>Grades 3, 5 & 8 include nationally normed test scores—any level that matches the student is acceptable.</p>
+    <!-- Standardized Assessments -->
+    <section style="display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:3rem">
+      <div style="flex:1 1 320px;min-width:280px">
+        <h2 style="text-align:center">Standardized&nbsp;Assessments</h2>
+        <p>Grades 3, 5 & 8 attach nationally normed test scores. The test level should match the student’s current ability—not necessarily their age-grade.</p>
+      </div>
+      <img src="images/assessment-600x400.jpg" alt="Standardized test"
+           style="flex:1 1 320px;max-width:420px;border-radius:.5rem">
+    </section>
+
+    <!-- Hours & Days -->
+    <section style="display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:3rem">
+      <img src="images/hours-days-600x400.jpg" alt="Hours and days"
+           style="flex:1 1 320px;max-width:420px;border-radius:.5rem">
+      <div style="flex:1 1 320px;min-width:280px">
+        <h2 style="text-align:center">Hours &amp; Days</h2>
+        <p>Elementary: 900 hrs / 180 days &nbsp;|&nbsp; Secondary: 990 hrs / 180 days. A signed statement that you met the requirement is all the law demands.</p>
       </div>
     </section>
 
-    <!-- SECTION: Hours & Days -->
-    <section class="split">
-      <figure><img src="images/hours-days-600x400.jpg" alt="Hours and days"></figure>
-      <div class="split__content">
-        <h2>Hours &amp; Days</h2>
-        <p>Elementary: 900 hrs / 180 days &nbsp;|&nbsp; Secondary: 990 hrs / 180 days. A signed statement of completion meets the requirement.</p>
-      </div>
-    </section>
-
-    <!-- SECTION: Checklist -->
-    <section class="centered">
-      <h2>Quick&nbsp;Checklist</h2>
-      <ul class="checklist">
-        <li>Portfolio samples</li>
-        <li>Reading log</li>
-        <li>Standardized test results</li>
-        <li>Payment – $40 (first) / $25 (sibling)</li>
-        <li>Bring your questions</li>
+    <!-- Checklist -->
+    <section style="text-align:center;margin-bottom:3rem">
+      <h2>Quick Checklist</h2>
+      <ul style="display:inline-block;text-align:left;line-height:1.8">
+        <li>&#10003; Portfolio samples</li>
+        <li>&#10003; Reading log</li>
+        <li>&#10003; Standardized test results</li>
+        <li>&#10003; $40 first child / $25 sibling</li>
+        <li>&#10003; Your question list</li>
       </ul>
     </section>
 
-    <!-- SECTION: Start-of-Year Forms -->
-    <section class="centered">
-      <h2>Start-of-Year&nbsp;Forms</h2>
-      <p>Submit Affidavit, Objectives (K-6 or 7-12) and medical/dental documents—or an exemption—by August 1.</p>
-      <figure class="wide-img"><img src="images/start-forms-600x400.jpg" alt="Start of year forms"></figure>
+    <!-- Start-of-Year Forms -->
+    <section style="text-align:center;margin-bottom:3rem">
+      <h2>Start-of-Year Forms</h2>
+      <p>Submit Affidavit, Objectives (K-6 or 7-12) and medical/dental documents (or exemption) by August 1.</p>
+      <img src="images/start-forms-600x400.jpg" alt="Start-of-year forms"
+           style="max-width:600px;width:100%;border-radius:.5rem;margin-top:1rem">
     </section>
 
     <!-- CTA -->
-    <section class="centered">
+    <section style="text-align:center;margin:4rem 0">
       <a href="https://calendar.app.google/72u4yEDH2w2hnZXN7" class="btn" target="_blank" rel="noopener">Schedule Your Evaluation</a>
+    </section>
+
+    <!-- FULL-COLOR STAMP -->
+    <section style="text-align:center;margin-bottom:4rem">
+      <img src="images/evaluation-stamp.png" alt="Official Homeschool Evaluation Stamp" style="max-width:220px;width:70%;height:auto">
     </section>
 
   </main>
 
-  <!-- ▸ FOOTER --------------------------------------------------------- -->
+  <!-- ▸ FOOTER -->
   <footer>
-    <div class="site-row"><p>© 2025&nbsp;Pillars of Peace Primary Partners. All rights reserved.</p></div>
+    <div class="site-row"><p>© 2025 Pillars of Peace Primary Partners. All rights reserved.</p></div>
   </footer>
-
-  <!-- ▸ WATERMARK ------------------------------------------------------ -->
-  <img src="images/evaluation-stamp.png" alt="" class="eval-watermark" aria-hidden="true">
 
   <script src="js/main.js"></script>
 </body>
