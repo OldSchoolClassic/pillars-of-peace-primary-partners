@@ -1,15 +1,32 @@
+/*----------------------------------------------
+  Google Font Imports
+----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classic+Sans&display=swap');
 
-:root {   
-  --primary-color: #45818e;
-  --secondary-color: #6a1b9a;
-  --accent-color: #7e57c2;
-  --bg-light: #ffffff;
-  --text-color: #7d6b5f;
-  --max-width: 1000px;
-  --padding: 1rem;
-}   
+/*----------------------------------------------
+  Custom Properties
+----------------------------------------------*/
+:root {
+  /* colors */
+  --primary-color:    #45818e;   /* your teal */
+  --secondary-color:  #6a1b9a;
+  --accent-color:     #7e57c2;
+  --bg-light:         #ffffff;   /* white site background */
+  --text-color:       #7d6b5f;
+  /* layout */
+  --max-width:        1000px;
+  --padding:          1rem;
+  /* fonts */
+  --font-large:       'Raleway', sans-serif;           /* headings */
+  --font-sub:         'Chocolate Classic Sans', cursive;/* sub-headings */
+  --font-body:        Arial, sans-serif;               /* body copy */
+}
 
+/*----------------------------------------------
+  Global Reset & Base Styles
+----------------------------------------------*/
 *,
 *::before,
 *::after {
@@ -18,7 +35,7 @@
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--bg-light);
   color: var(--text-color);
   line-height: 1.6;
@@ -30,7 +47,32 @@ body {
   margin: 0 auto;
 }
 
-/* Top Bar */
+/*----------------------------------------------
+  Typography
+----------------------------------------------*/
+h1,
+.slide-inner h1,
+.content h1 {
+  font-family: var(--font-large);
+}
+
+h2,
+h3,
+.content h2,
+.content h3 {
+  font-family: var(--font-sub);
+}
+
+p,
+li,
+label,
+.content p {
+  font-family: var(--font-body);
+}
+
+/*----------------------------------------------
+  Top Bar
+----------------------------------------------*/
 .top-bar {
   background-color: var(--primary-color);
   color: white;
@@ -53,8 +95,10 @@ body {
   text-decoration: underline;
 }
 
-/* Header */
-header {  
+/*----------------------------------------------
+  Header (Desktop)
+----------------------------------------------*/
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,10 +118,11 @@ header .left-nav a,
 header .right-nav a,
 header .main-nav a {
   text-decoration: none;
-  color: #004aad;
+  color: white;            /* clickable nav links stay white */
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  background: var(--primary-color); /* nav buttons teal */
 }
 header .left-nav a:hover,
 header .right-nav a:hover,
@@ -90,8 +135,10 @@ header .main-nav a:hover {
   height: auto;
 }
 
-/* Secondary Header */
-.secondary-header {  
+/*----------------------------------------------
+  Secondary Header (Mobile)
+----------------------------------------------*/
+.secondary-header {
   display: none;
   background: var(--bg-light);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -111,6 +158,7 @@ header .main-nav a:hover {
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  background: var(--primary-color);
 }
 .secondary-header .main-nav a:hover {
   background-color: var(--accent-color);
@@ -129,7 +177,9 @@ header .main-nav a:hover {
   display: block;
 }
 
-/* Hero/Landing */
+/*----------------------------------------------
+  Hero / Landing
+----------------------------------------------*/
 #landing .slide-container {
   position: relative;
   height: 70vh;
@@ -155,7 +205,9 @@ header .main-nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* Buttons */
+/*----------------------------------------------
+  Buttons
+----------------------------------------------*/
 .btn,
 .btn:visited {
   text-decoration: none;
@@ -171,7 +223,9 @@ header .main-nav a:hover {
   background-color: var(--secondary-color);
 }
 
-/* Content Sections */
+/*----------------------------------------------
+  Content Sections
+----------------------------------------------*/
 .content {
   padding: var(--padding) 0;
 }
@@ -190,7 +244,9 @@ header .main-nav a:hover {
   padding-left: 1.5rem;
 }
 
-/* Resources Grid */
+/*----------------------------------------------
+  Resources Grid
+----------------------------------------------*/
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -198,7 +254,6 @@ header .main-nav a:hover {
   gap: 1.5rem;
   margin: var(--padding) 0;
 }
-
 .card {
   background: white;
   padding: var(--padding);
@@ -224,7 +279,9 @@ header .main-nav a:hover {
   line-height: 1.2;
 }
 
-/* Contact Methods */
+/*----------------------------------------------
+  Contact Cards & Methods
+----------------------------------------------*/
 .contact-method {
   margin-bottom: 2rem;
 }
@@ -235,21 +292,12 @@ header .main-nav a:hover {
 .contact-method address {
   margin-bottom: 1rem;
 }
-
 .contact-cards {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 3rem;
 }
-
-@media (max-width: 768px) {
-  .contact-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Contact Page Icons */
 .contact-cards img,
 .contact-method img {
   max-width: 120px;
@@ -258,7 +306,9 @@ header .main-nav a:hover {
   margin: 0 auto 1rem;
 }
 
-/* Footer */
+/*----------------------------------------------
+  Footer
+----------------------------------------------*/
 footer {
   background: var(--bg-light);
   text-align: center;
@@ -267,7 +317,9 @@ footer {
   color: #666;
 }
 
-/* Responsive */
+/*----------------------------------------------
+  Responsive Tweaks
+----------------------------------------------*/
 @media (max-width: 768px) {
   .secondary-header {
     display: block;
@@ -285,5 +337,8 @@ footer {
   }
   .secondary-header .main-nav.open {
     display: flex;
+  }
+  .contact-cards {
+    grid-template-columns: 1fr;
   }
 }
